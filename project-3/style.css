@@ -1,0 +1,352 @@
+
+
+
+/*GENERAL*/
+
+* {
+	box-sizing: border-box;
+}
+
+.outer-wrap {
+	padding: 1em;
+}
+
+html {
+	margin-top: 111px;
+	background: linear-gradient(#757575, #424242);
+}
+
+.inner-wrap {
+	max-width: 635px;
+	margin: 0 auto;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.gen-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: 'Nunito';
+}
+
+p {
+	font-family: 'Oxygen';
+}
+
+
+
+
+
+
+
+/*HEADER*/
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	background: linear-gradient(#fafafa, #e5e5e5);
+	border-bottom: 1px solid #eee;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	z-index: 1000;
+}
+
+header .page-title {
+	float: left;
+	margin-left: 20%;
+}
+
+header .page-title img {
+	height: 90px;
+	width: auto;
+	margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+/*FORM*/
+
+.form-title {
+	font-size: 1.75em;
+	font-weight: bold;
+	margin: 0;
+	color: #323232;
+}
+
+.form-sub-title {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 1em;
+	color: #464646;
+}
+
+form {
+	background: #e5e5e5;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	border: 1px solid #b2b2b2;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: inset 5px -5px 16px #c4c4c4,
+				inset -5px 5px 16px #c4c4c4,
+				0px 2px 10px rgba(0,0,0,0.42);
+	padding: 1em;
+	border-top: none;
+	/*box-shadow: 0px 4px 10px rgba(0,0,0,0.55),
+				4px 0px 10px rgba(0,0,0,0.55),
+				-4px 0px 10px rgba(0,0,0,0.55);*/
+				/*box-shadow: 0px 1px 3px rgba(0,0,0,0.42);*/
+}
+
+/*yellow-bckg*/
+legend,
+.yellow-bckg {
+	background: #F9B213;
+	color: #212121;
+	padding: .35em;
+	border: 1px solid #e8a102;
+	box-shadow: 1px 2px 4px rgba(0,0,0,0.42);
+}
+
+legend {
+	box-shadow: inset 1px 1px 5px #d79000,
+				inset -1px -1px 5px #d79000,
+				1px 1px 3px rgba(0,0,0,0.42);
+	border: 1px solid #c68000;
+}
+
+legend i {
+	margin-right: 2.5px;
+}
+
+fieldset {
+	background: #424242;
+	color: #f5f5f5;
+	margin-top: 1em;
+	border: 2px solid #e8a102;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.42);
+}
+
+.contact-form {
+	width: 100%;
+}
+
+
+label {
+	margin: 0 5px;
+}
+
+label[for="addInfo"],
+label[for="comments"] {
+	display: block !important;
+	width: 100% !important;
+	margin-top: 16px !important;
+}
+
+input[type="text"],
+select,
+textarea {
+	opacity: .55;
+	transition: all .56s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: inset 0px 2px 0px #F9B213,
+				0px 1px 3px rgba(0,0,0,0.4);
+	border-color: #424242;
+	opacity: 1;
+}
+
+
+.btn-wrap {
+	margin-bottom: 14px;
+}
+
+.btn-wrap label {
+	width: initial;
+	font-weight: bold;
+	padding: 3px;
+	border-bottom: 2px solid #F9B213;
+	/*background: #161616;*/
+}
+
+input[type="text"] {
+	padding-left: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+button {
+	background: #eaeaea;
+	width: 100%;
+	display: block;
+	margin: 1em auto;
+	border: 1px solid rgba(0,0,0,0.29);
+	height: 45px;
+	border-radius: 2.5px;
+}
+
+button {
+	font-weight: bold;
+	background: linear-gradient(#F9B213, #e8a102);
+	border: #d79000;
+}
+
+button:hover {
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.42);
+}
+
+button:active {
+	background: linear-gradient(to top, #F9B213, #e8a102);
+}
+
+
+/*input {
+	display: block;
+	margin: 1em 5px;
+}*/
+
+input[type="checkbox"],
+input[type="checkbox"] label,
+input[type="radio"],
+input[type="radio"] label {
+
+	display: inline-block;
+
+}
+
+.copyright {
+	background: #212121;
+	color: #F9B213;
+	text-align: center;
+	margin: 0;
+	padding: 12px;
+	border: 1px solid #161616;
+	border-top: 5px solid #161616;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.42);
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+
+
+	.btn-wrap {
+		width: 32%;
+		display: inline-block;
+	}
+
+	.rate .btn-wrap {
+		width: 24% !important;
+		margin: 0 !important;
+	}
+
+	.contact-form input[type="text"],
+	.contact-form textarea,
+	.contact-form select,
+	.contact-form button {
+		width: 71%;
+		display: inline-block;
+	}
+
+	label {
+		margin: 0;
+		width: 25%;
+		display: inline-block;
+	}
+
+
+
+
+
+}
+
+@media screen and (min-width: 625px) {
+
+
+
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+	width: 71%;
+	display: inline-block;
+}
+
+label {
+	margin: 0;
+	width: 25%;
+	display: inline-block;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px) {
+	
+
+
+
+/*form*/
+
+.form-title {
+	font-size: 2.25em;
+}
+
+.form-sub-title {
+	float: right;
+	margin-right: 8px;
+}
+
+.btn-wrap {
+	width: initial;
+	display: inline-block;
+	margin: 0 12px 0 0;
+}
+
+button {
+	transition: all .35s;
+	background: #161616;
+	color: #F9B213;
+}
+
+button:hover {
+	opacity: 1;
+	box-shadow: inset 325px 0px 0px #F9B213,
+				inset -325px 0px 0px #F9B213,
+				0px 1px 3px rgba(0,0,0,0.42);
+	color: #161616;
+}
+
+
+
+}
